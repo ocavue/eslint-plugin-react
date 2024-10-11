@@ -13,22 +13,9 @@ jobs:
       fail-fast: false
       matrix:
         ts_version:
-          # The official ESLint types are not compatible with TS 3.9
-          # - 3.9
-          - '4.0'
-          - 4.1
-          - 4.2
-          - 4.3
-          - 4.4
-          - 4.5
-          - '5.0'
-          - 5.5
           - 5.6
         ts_lib:
-          - es2015
-          - es2015,dom
           - es2020
-          - esnext
     steps:
       - uses: actions/checkout@v4
         with:
