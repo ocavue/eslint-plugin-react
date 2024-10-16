@@ -31,6 +31,7 @@ const plugins = [
   'react',
 ];
 
+// TODO: with TS 4.5+, inline this
 const SEVERITY_ERROR = /** @type {2} */ (2);
 const SEVERITY_OFF = /** @type {0} */ (0);
 
