@@ -48,7 +48,7 @@ jobs:
       # test-published-types directory, it's only install `dependencies` of the
       # lib.
       - name: pack the lib
-        run: npm run pack --pack-destination /tmp/
+        run: npm pack --pack-destination /tmp/
 
       - name: find the packed lib
         run: echo "ESLINT_PLUGIN_REACT_PATH=$(ls /tmp/eslint-plugin-react*.tgz | tail -n 1)" >> $GITHUB_ENV
